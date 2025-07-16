@@ -77,11 +77,9 @@ export const Playerstats = () => {
             </caption>
             <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
               <tr>
+                <th className="px-6 py-3">Index</th>
                 <th className="px-6 py-3">Player</th>
-                <th className="px-6 py-3">Kills</th>
-                <th className="px-6 py-3">
-                  <span className="sr-only">Avatar</span>
-                </th>
+                <th className="px-6 py-3">Total Kills</th>
               </tr>
             </thead>
             <tbody>
@@ -94,24 +92,17 @@ export const Playerstats = () => {
                     scope="row"
                     className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white flex items-center gap-3"
                   >
+                    {index + 1}
+                  </th>
+                  <td className="px-6 py-4 text-purple-400 font-semibold flex">
                     <img
                       src={`https://crafatar.com/avatars/${player.uuid}`}
                       alt={player.name}
                       className="w-6 h-6 rounded"
                     />
-                    {index + 1}. {player.name}
-                  </th>
-                  <td className="px-6 py-4 text-purple-400 font-semibold">
-                    {player.total_kills}
+                    <span className="ml-2">{player.name}</span>
                   </td>
-                  <td className="px-6 py-4 text-right">
-                    <a
-                      href="#"
-                      className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                    >
-                      View
-                    </a>
-                  </td>
+                  <td className="px-6 py-4 text-right">{player.total_kills}</td>
                 </tr>
               ))}
             </tbody>

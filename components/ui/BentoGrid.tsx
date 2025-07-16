@@ -2,7 +2,6 @@ import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 
 // Also install this npm i --save-dev @types/react-lottie
-import Lottie from "react-lottie";
 
 import { cn } from "@/lib/utils";
 
@@ -22,7 +21,6 @@ export const BentoGrid = ({
   return (
     <div
       className={cn(
-        // change gap-4 to gap-8, change grid-cols-3 to grid-cols-5, remove md:auto-rows-[18rem], add responsive code
         "grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 lg:gap-8 mx-auto",
         className
       )}
@@ -56,7 +54,6 @@ export const BentoGridItem = ({
   const rightLists = ["Coffee Protect", "Anti Xray", "Player Reporting"];
 
   const [copied, setCopied] = useState(false);
-  const [hovered, setHovered] = useState(false);
 
   const words = [
     "Mastering PVP Combat",
@@ -192,19 +189,6 @@ export const BentoGridItem = ({
           )}
           {id === 6 && (
             <div className="mt-5 relative">
-              {/* button border magic from tailwind css buttons  */}
-              {/* add rounded-md h-8 md:h-8, remove rounded-full */}
-              {/* remove focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 */}
-              {/* add handleCopy() for the copy the text */}
-              <div
-                className={`absolute -bottom-5 right-0 ${
-                  copied ? "block" : "block"
-                }`}
-              >
-                {/* <img src="/confetti.gif" alt="confetti" /> */}
-                <Lottie options={defaultOptions} height={200} width={400} />
-              </div>
-
               <MagicButton
                 title="play.kanrarsmp.fun"
                 icon={<IoCopyOutline />}
