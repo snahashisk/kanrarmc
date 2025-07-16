@@ -31,13 +31,13 @@ export const Playerstats = () => {
       try {
         const [killsRes, playtimeRes, deathsRes] = await Promise.all([
           axios.get<PlayerKillStat[]>(
-            "http://localhost:5500/api/v1/stats/stats"
+            "http://paid-03.elitehosting.sbs:3033/api/v1/stats/stats"
           ),
           axios.get<PlayerPlaytimeStat[]>(
-            "http://localhost:5500/api/v1/stats/plays"
+            "http://paid-03.elitehosting.sbs:3033/api/v1/stats/plays"
           ),
           axios.get<PlayerDeathStat[]>(
-            "http://localhost:5500/api/v1/stats/deaths"
+            "http://paid-03.elitehosting.sbs:3033/api/v1/stats/deaths"
           ),
         ]);
 
