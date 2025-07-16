@@ -1,6 +1,6 @@
 export const navItems = [
   { name: "About", link: "#about" },
-  { name: "Projects", link: "#projects" },
+  { name: "Buy Ranks", link: "#projects" },
   { name: "Testimonials", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
 ];
@@ -8,17 +8,18 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
+    title:
+      "At KanrarMC, We foster intense PvP Battles, True Survival gameplay and No Landclaim",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "/b1.svg",
+    img: "/mcbg.png",
     spareImg: "",
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
+    title: "Experience Minecraft with a Global Community",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -28,8 +29,8 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "My tech stack",
-    description: "I constantly try to improve",
+    title: "We are using",
+    description: "Constanntly trying to improve gameplay",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
@@ -38,13 +39,13 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
+    title: "Join this SMP If You Know",
     description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-1 ",
     imgClassName: "",
-    titleClassName: "justify-start",
+    titleClassName:
+      "items-center text-2xl justify-center md:justify-start lg:justify-center",
     img: "/grid.svg",
-    spareImg: "/b4.svg",
   },
 
   {
@@ -59,7 +60,7 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "Do you want to start a project together?",
+    title: "Do you want to Join the Best Survival SMP?",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -107,33 +108,33 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "I joined the server as just a random player, not expecting much. But over time, it turned into something way more meaningful. Now, it's a part of my daily routine. I log in almost every day not just for the game, but for the community that honestly feels like family now.The player base is one of the best I've ever seen chill, friendly, and always ready to help or have fun. Whether it's casual building, intense PvP, or just vibing, there's always something going on and someone to share the moment with.Massive thanks to the owner for creating such a safe, fun, and welcoming space for all of us. Your effort and consistency don't go unnoticed. This server isn't just a Minecraft server anymore it's a comfort zone, a community, and a place where I've made real memories with real people.",
+    name: "Urmi Rajbongshi",
+    title: "Co-owner of KanrarMC",
+  },
+  {
+    quote:
+      "I still remember the first day we logged in — a trio  and a flat plain with a blocky sun setting in the distance. We sat together on a beach , watching that pixelated sunset, dreaming of what the server could become. Since then, we've built worlds, fought through nights, and welcomed hundreds of players. But no matter how big the server got, that feeling of sitting side by side —we  friends watching the sky change colors — never faded.The owner isn't just someone who runs commands. They're a friend, a guide, and the heart of this world. From that first sunset to every adventure to the immense builds till the late nights of tournament disscusion , it's been an unforgettable journey together.",
+    name: "Urmi Rajbongshi",
+    title: "Co-owner of KanrarMC",
+  },
+  {
+    quote:
+      "Our server has grown from just a few players to a thriving community thanks to our commitment to fairness, fun, and a drama-free environment. The economy is balanced, the PvP system is competitive and fair, and all events are well-organized to keep players engaged. We prioritize creating an enjoyable experience for everyone. Our staff team is active around the clock, friendly (most of the time!), and always open to player feedback. They work hard to maintain a safe and welcoming atmosphere for all players. Whether you're here to grind, fight, build, or just have fun, you'll find a place in our growing community. We believe in listening to our players and constantly improving the server based on your suggestions. Join us and be part of a community that truly cares about your gaming experience. Let’s keep growing together!",
+    name: "Urmi Rajbongshi",
+    title: "Co-owner of KanrarMC",
   },
   {
     quote:
       "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    name: "Urmi Rajbongshi",
+    title: "Co-owner of KanrarMC",
   },
   {
     quote:
       "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    name: "Urmi Rajbongshi",
+    title: "Co-owner of KanrarMC",
   },
 ];
 

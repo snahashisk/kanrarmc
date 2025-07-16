@@ -6,11 +6,11 @@ import Lottie from "react-lottie";
 
 import { cn } from "@/lib/utils";
 
-
 import { BackgroundGradientAnimation } from "./GradientBg";
 import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "../MagicButton";
+import { FlipWords } from "./FlipWords";
 
 export const BentoGrid = ({
   className,
@@ -52,10 +52,22 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "Express", "Typescript"];
-  const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
+  const leftLists = ["Grimac", "Vulcan", "LPX"];
+  const rightLists = ["Coffee Protect", "Anti Xray", "Player Reporting"];
 
   const [copied, setCopied] = useState(false);
+  const [hovered, setHovered] = useState(false);
+
+  const words = [
+    "Mastering PVP Combat",
+    "Hiding and Protecting Your Base",
+    "Raiding and Looting Bases",
+    "Surviving Harsh Environments",
+    "Trust and Team Management",
+    "Travel and Exploration Strategy",
+    "Essential Tools and Inventory Setup",
+    "Dealing with Griefers and Ambushes",
+  ];
 
   const defaultOptions = {
     loop: copied,
@@ -67,7 +79,7 @@ export const BentoGridItem = ({
   };
 
   const handleCopy = () => {
-    const text = "hsu@jsmastery.pro";
+    const text = "play.kanrarsmp.fun";
     navigator.clipboard.writeText(text);
     setCopied(true);
   };
@@ -99,8 +111,9 @@ export const BentoGridItem = ({
           )}
         </div>
         <div
-          className={`absolute right-0 -bottom-5 ${id === 5 && "w-full opacity-80"
-            } `}
+          className={`absolute right-0 -bottom-5 ${
+            id === 5 && "w-full opacity-80"
+          } `}
         >
           {spareImg && (
             <img
@@ -169,6 +182,14 @@ export const BentoGridItem = ({
               </div>
             </div>
           )}
+          {id === 4 && (
+            <div className="mt-2 relative flex items-start pl-0">
+              <FlipWords
+                words={words}
+                className="font-sans text-xl text-orange-400 font-bold z-10"
+              />
+            </div>
+          )}
           {id === 6 && (
             <div className="mt-5 relative">
               {/* button border magic from tailwind css buttons  */}
@@ -176,15 +197,16 @@ export const BentoGridItem = ({
               {/* remove focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 */}
               {/* add handleCopy() for the copy the text */}
               <div
-                className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
-                  }`}
+                className={`absolute -bottom-5 right-0 ${
+                  copied ? "block" : "block"
+                }`}
               >
                 {/* <img src="/confetti.gif" alt="confetti" /> */}
                 <Lottie options={defaultOptions} height={200} width={400} />
               </div>
 
               <MagicButton
-                title={copied ? "Email is Copied!" : "Copy my email address"}
+                title="play.kanrarsmp.fun"
                 icon={<IoCopyOutline />}
                 position="left"
                 handleClick={handleCopy}
