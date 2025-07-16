@@ -69,7 +69,7 @@ export const Playerstats = () => {
       <div className="grid lg:grid-cols-3 grid-cols-1 gap-10 mt-12">
         <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
           <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-            <caption className="p-5 text-lg font-semibold text-left rtl:text-right text-gray-900 bg-white dark:text-white dark:bg-gray-800">
+            <caption className="p-5 text-lg font-semibold rtl:text-right text-gray-900 bg-white dark:text-white dark:bg-gray-800 text-center">
               Top Player Kills
               <p className="mt-1 text-sm font-normal text-gray-500 dark:text-gray-400">
                 Players who have secured the most kills in KanrarSMP.
@@ -79,7 +79,7 @@ export const Playerstats = () => {
               <tr>
                 <th className="px-6 py-3">Index</th>
                 <th className="px-6 py-3">Player</th>
-                <th className="px-6 py-3">Total Kills</th>
+                <th className="px-6 py-3">Kills</th>
               </tr>
             </thead>
             <tbody>
@@ -88,26 +88,26 @@ export const Playerstats = () => {
                   key={index}
                   className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200"
                 >
-                  <th
-                    scope="row"
-                    className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white flex items-center gap-3"
-                  >
+                  <td className="px-6 py-4 font-bold text-gray-900 dark:text-white">
                     {index + 1}
-                  </th>
-                  <td className="px-6 py-4 text-purple-400 font-semibold flex">
+                  </td>
+                  <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white flex items-center gap-3">
                     <img
                       src={`https://crafatar.com/avatars/${player.uuid}`}
                       alt={player.name}
                       className="w-6 h-6 rounded"
                     />
-                    <span className="ml-2">{player.name}</span>
+                    {player.name}
                   </td>
-                  <td className="px-6 py-4 text-right">{player.total_kills}</td>
+                  <td className="px-6 py-4 text-purple-400 font-semibold">
+                    {player.total_kills}
+                  </td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
+
         <div>
           <h3 className="text-2xl font-semibold mb-12 text-green-100">
             Top Playtime
