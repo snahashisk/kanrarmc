@@ -32,13 +32,13 @@ export const Playerstats = () => {
       try {
         const [killsRes, playtimeRes, deathsRes] = await Promise.all([
           axios.get<PlayerKillStat[]>(
-            "https://kanrarmcbackend.onrender.com/api/v1/stats/stats"
+            "https://kanrarmcbackend.vercel.app/api/v1/stats/stats"
           ),
           axios.get<PlayerPlaytimeStat[]>(
-            "https://kanrarmcbackend.onrender.com/api/v1/stats/plays"
+            "https://kanrarmcbackend.vercel.app/api/v1/stats/plays"
           ),
           axios.get<PlayerDeathStat[]>(
-            "https://kanrarmcbackend.onrender.com/api/v1/stats/deaths"
+            "https://kanrarmcbackend.vercel.app/api/v1/stats/deaths"
           ),
         ]);
 
