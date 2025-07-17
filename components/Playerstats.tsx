@@ -98,11 +98,6 @@ export const Playerstats = () => {
                     <img
                       src={`https://crafatar.com/avatars/${player.uuid}`}
                       alt={player.name}
-                      onError={(e) => {
-                        e.target.onerror = null; // prevent infinite loop
-                        e.target.src =
-                          "https://crafatar.com/avatars/bb371f15-02a8-31d8-9660-3d29d41040d2";
-                      }}
                       className="w-6 h-6 rounded"
                     />
                     {player.name}
@@ -144,11 +139,6 @@ export const Playerstats = () => {
                     <img
                       src={`https://crafatar.com/avatars/${player.uuid}`}
                       alt={player.name}
-                      onError={(e) => {
-                        e.target.onerror = null; // prevent infinite loop
-                        e.target.src =
-                          "https://crafatar.com/avatars/bb371f15-02a8-31d8-9660-3d29d41040d2";
-                      }}
                       className="w-6 h-6 rounded"
                     />
                     {player.name}
@@ -190,11 +180,6 @@ export const Playerstats = () => {
                     <img
                       src={`https://crafatar.com/avatars/${player.uuid}`}
                       alt={player.name}
-                      onError={(e) => {
-                        e.target.onerror = null; // prevent infinite loop
-                        e.target.src =
-                          "https://crafatar.com/avatars/bb371f15-02a8-31d8-9660-3d29d41040d2";
-                      }}
                       className="w-6 h-6 rounded"
                     />
                     {player.name}
