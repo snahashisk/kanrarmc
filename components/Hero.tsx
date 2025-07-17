@@ -25,8 +25,22 @@ type WidgetData = {
 };
 
 const Hero = () => {
-  const [serverStatus, setServerStatus] = useState<ServerStatus | null>(null);
-  const [data, setData] = useState<WidgetData | null>(null);
+  const [serverStatus, setServerStatus] = useState<ServerStatus>({
+    online: false,
+    players: {
+      online: 10,
+      max: 100,
+      list: [],
+    },
+  });
+
+  const [data, setData] = useState<WidgetData>({
+    presence_count: 30,
+    members: [],
+    id: "",
+    name: "",
+    instant_invite: "",
+  });
 
   useEffect(() => {
     const getStatus = async () => {
