@@ -61,7 +61,7 @@ export const Playerstats = () => {
   };
 
   return (
-    <div className="py-20 w-full text-center">
+    <section className="py-20 w-full text-center" id="playerstats">
       <h1 className="heading py-4">
         KanrarSMP <span className="text-purple">Player Statistics</span>
       </h1>
@@ -192,6 +192,6 @@ export const Playerstats = () => {
           </table>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

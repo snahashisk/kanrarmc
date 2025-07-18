@@ -27,7 +27,10 @@ const Voting = () => {
   }, []);
 
   return (
-    <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <section
+      className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+      id="voting"
+    >
       <div className="mx-auto px-4 sm:px-6 lg:px-8 text-center col-span-2 flex flex-col gap-5 items-center justify-center +">
         <h1 className="mb-4 text-lg font-bold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
           Support KanrarMC by <span className="text-purple">Voting</span>
@@ -36,18 +39,22 @@ const Voting = () => {
           Your votes help us grow and reach more players! Vote daily to support
           the server and climb the leaderboard.
         </p>
-        <a
-          href="#"
-          className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
-        >
-          Learn more
-          <svg
-            className="ml-2 -mr-1 w-4 h-4"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          />
-        </a>
+        <div className="flex flex-wrap justify-center gap-4">
+          <a
+            href="https://play-minecraft-servers.com/minecraft-servers/kanrarsmp/?tab=vote"
+            target="_blank"
+            className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
+          >
+            Vote Link 1
+          </a>
+          <a
+            href="https://minecraftservers.org/vote/674183"
+            target="_blank"
+            className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
+          >
+            Vote Link 2
+          </a>
+        </div>
       </div>
       <div className="col-span-1 mx-auto px-4 sm:px-6 lg:px-8">
         <table className="w-full text-sm text-center rtl:text-right text-gray-500 dark:text-gray-400">
@@ -86,7 +93,7 @@ const Voting = () => {
           </tbody>
         </table>
       </div>
-    </div>
+    </section>
   );
 };
 

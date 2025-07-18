@@ -105,8 +105,11 @@ const Hero = () => {
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl text-gray-300">
             Hi! I&apos;m Snahashis, a Minecraft Server Developer based in India.
+          </p>
+          <p className="text-center mt-5 md:tracking-wider text-sm md:text-lg lg:text-lg font-semibold">
+            IP: play.kanrarsmp.fun PORT: 4150
           </p>
 
           <div className="flex flex-col md:flex-row items-center mt-8 justify-center space-y-4 md:space-y-0 md:space-x-28">
@@ -118,7 +121,7 @@ const Hero = () => {
               />
             </a>
 
-            <a href="#about">
+            <a href="https://discord.gg/rZcXmqyVnr" target="_blank">
               <MagicButton
                 title={`${data?.presence_count} Users Online`}
                 icon={<FaDiscord />}

@@ -1,7 +1,8 @@
 export const navItems = [
   { name: "About", link: "#about" },
-  { name: "Buy Ranks", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
+  { name: "Ranks", link: "#ranks" },
+  { name: "PlayerStats", link: "#playerstats" },
+  { name: "Voting", link: "#voting" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -109,94 +110,55 @@ export const testimonials = [
   {
     quote:
       "I joined the server as just a random player, not expecting much. But over time, it turned into something way more meaningful. Now, it's a part of my daily routine. I log in almost every day not just for the game, but for the community that honestly feels like family now.The player base is one of the best I've ever seen chill, friendly, and always ready to help or have fun. Whether it's casual building, intense PvP, or just vibing, there's always something going on and someone to share the moment with.Massive thanks to the owner for creating such a safe, fun, and welcoming space for all of us. Your effort and consistency don't go unnoticed. This server isn't just a Minecraft server anymore it's a comfort zone, a community, and a place where I've made real memories with real people.",
-    name: "Future Wifey",
-    title: "Co-owner of KanrarMC",
+    name: "Avni",
+    title: "Admin of KanrarMC",
   },
   {
     quote:
       "I still remember the first day we logged in — a trio  and a flat plain with a blocky sun setting in the distance. We sat together on a beach , watching that pixelated sunset, dreaming of what the server could become. Since then, we've built worlds, fought through nights, and welcomed hundreds of players. But no matter how big the server got, that feeling of sitting side by side —we  friends watching the sky change colors — never faded.The owner isn't just someone who runs commands. They're a friend, a guide, and the heart of this world. From that first sunset to every adventure to the immense builds till the late nights of tournament disscusion , it's been an unforgettable journey together.",
-    name: "Future Wifey",
-    title: "Co-owner of KanrarMC",
+    name: "The_Kirat",
+    title: "Moderator of KanrarMC",
   },
   {
     quote:
       "Our server has grown from just a few players to a thriving community thanks to our commitment to fairness, fun, and a drama-free environment. The economy is balanced, the PvP system is competitive and fair, and all events are well-organized to keep players engaged. We prioritize creating an enjoyable experience for everyone. Our staff team is active around the clock, friendly (most of the time!), and always open to player feedback. They work hard to maintain a safe and welcoming atmosphere for all players. Whether you're here to grind, fight, build, or just have fun, you'll find a place in our growing community. We believe in listening to our players and constantly improving the server based on your suggestions. Join us and be part of a community that truly cares about your gaming experience. Let’s keep growing together!",
-    name: "Future Wifey",
-    title: "Co-owner of KanrarMC",
+    name: "IIKartikII",
+    title: "Former Member of KanrarMC",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Future Wifey",
-    title: "Co-owner of KanrarMC",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Future Wifey",
-    title: "Co-owner of KanrarMC",
-  },
-];
-
-export const companies = [
-  {
-    id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
-  },
-  {
-    id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
-  },
-  {
-    id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
-  },
-  {
-    id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
-  },
-  {
-    id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
+      "This smp is very good I am playing in this smp since the smp was started  and this smp have very good players no toxicity  and the main thing the staff of smp is very good 24/7 online staff so if you face any problems you can complaint to staff and it is thrill to play in this smp there are many events are hosted every month there you can win custom items and ranks and the owner of this smp is very good he is very friendly and helpful and he is always online to help you if you face any problems in the smp and the owner is very good at building and he builds very good things in the smp and the owner is very good at coding and he codes many things in the smp and the owner is very good at making plugins for the smp and the owner is very good at making custom items for the smp and the owner is very good at making custom ranks for the smp",
+    name: "Sparker",
+    title: "Former Member of KanrarMC",
   },
 ];
 
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Bring More Gamemodes",
+    desc: "Introduce and implement a variety of engaging game modes to enhance player retention and diversify gameplay.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "More Robust Anticheat",
+    desc: "Enhance server security by integrating an advanced anti-cheat system to detect and prevent unfair gameplay.",
+    className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "Non Toxic Community",
+    desc: "Promote a positive and inclusive player environment through automated moderation tools and community guidelines.",
+    className: "md:col-span-2",
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "More Server Locations",
+    desc: "Expand global server infrastructure to reduce latency and improve gameplay experience across regions.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },

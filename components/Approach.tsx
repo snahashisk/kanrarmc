@@ -64,7 +64,7 @@ const UncheckIcon = () => {
 
 const Approach = () => {
   return (
-    <section className="w-full py-20">
+    <section className="w-full py-20" id="ranks">
       <h1 className="heading">
         Buy <span className="text-purple">Ranks</span>
       </h1>

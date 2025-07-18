@@ -56,12 +56,12 @@ export const BentoGridItem = ({
   const [copied, setCopied] = useState(false);
 
   const words = [
-    "Mastering PVP Combat",
+    "Familiar with PVP Combat",
     "Hiding and Protecting Your Base",
     "Raiding and Looting Bases",
     "Surviving Harsh Environments",
     "Trust and Team Management",
-    "Travel and Exploration Strategy",
+    "Travel and Exploration",
     "Essential Tools and Inventory Setup",
     "Dealing with Griefers and Ambushes",
   ];

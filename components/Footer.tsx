@@ -17,16 +17,16 @@ const Footer = () => {
 
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">
-          Ready to take <span className="text-purple">your</span> digital
-          presence to the next level?
+          Ready to <span className="text-purple">experience</span> the real
+          survival minecraft smp?
         </h1>
         <p className="text-white-200 md:mt-10 my-5 text-center">
-          Reach out to me today and let&apos;s discuss how I can help you
-          achieve your goals.
+          Join with Java or bedrock and join our discord server to get started.
+          We are a community of passionate players.
         </p>
         <a href="https://discord.gg/rZcXmqyVnr" target="_blank">
           <MagicButton
-            title="Let's get in touch"
+            title="Join Our Discord"
             icon={<FaLocationArrow />}
             position="right"
           />
