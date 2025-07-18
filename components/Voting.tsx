@@ -57,7 +57,7 @@ const Voting = () => {
         </div>
       </div>
       <div className="col-span-1 mx-auto px-4 sm:px-6 lg:px-8">
-        <table className="w-full text-sm text-center rtl:text-right text-gray-500 dark:text-gray-400">
+        <table className="w-full text-sm text-center rtl:text-right text-gray-500 dark:text-gray-400 rounded-lg overflow-hidden">
           <caption className="p-5 text-lg font-semibold rtl:text-right text-gray-900 bg-white dark:text-white dark:bg-gray-800 text-center">
             Top Voters
           </caption>
