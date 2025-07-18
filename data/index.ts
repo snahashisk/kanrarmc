@@ -110,24 +110,28 @@ export const testimonials = [
   {
     quote:
       "I joined the server as just a random player, not expecting much. But over time, it turned into something way more meaningful. Now, it's a part of my daily routine. I log in almost every day not just for the game, but for the community that honestly feels like family now.The player base is one of the best I've ever seen chill, friendly, and always ready to help or have fun. Whether it's casual building, intense PvP, or just vibing, there's always something going on and someone to share the moment with.Massive thanks to the owner for creating such a safe, fun, and welcoming space for all of us. Your effort and consistency don't go unnoticed. This server isn't just a Minecraft server anymore it's a comfort zone, a community, and a place where I've made real memories with real people.",
+    image: "/girlavatar.png",
     name: "Avni",
     title: "Admin of KanrarMC",
   },
   {
     quote:
       "I still remember the first day we logged in — a trio  and a flat plain with a blocky sun setting in the distance. We sat together on a beach , watching that pixelated sunset, dreaming of what the server could become. Since then, we've built worlds, fought through nights, and welcomed hundreds of players. But no matter how big the server got, that feeling of sitting side by side —we  friends watching the sky change colors — never faded.The owner isn't just someone who runs commands. They're a friend, a guide, and the heart of this world. From that first sunset to every adventure to the immense builds till the late nights of tournament disscusion , it's been an unforgettable journey together.",
+    image: "/boyavatar.png",
     name: "The_Kirat",
     title: "Moderator of KanrarMC",
   },
   {
     quote:
       "Our server has grown from just a few players to a thriving community thanks to our commitment to fairness, fun, and a drama-free environment. The economy is balanced, the PvP system is competitive and fair, and all events are well-organized to keep players engaged. We prioritize creating an enjoyable experience for everyone. Our staff team is active around the clock, friendly (most of the time!), and always open to player feedback. They work hard to maintain a safe and welcoming atmosphere for all players. Whether you're here to grind, fight, build, or just have fun, you'll find a place in our growing community. We believe in listening to our players and constantly improving the server based on your suggestions. Join us and be part of a community that truly cares about your gaming experience. Let’s keep growing together!",
+    image: "/boyavatar.png",
     name: "IIKartikII",
     title: "Former Member of KanrarMC",
   },
   {
     quote:
       "This smp is very good I am playing in this smp since the smp was started  and this smp have very good players no toxicity  and the main thing the staff of smp is very good 24/7 online staff so if you face any problems you can complaint to staff and it is thrill to play in this smp there are many events are hosted every month there you can win custom items and ranks and the owner of this smp is very good he is very friendly and helpful and he is always online to help you if you face any problems in the smp and the owner is very good at building and he builds very good things in the smp and the owner is very good at coding and he codes many things in the smp and the owner is very good at making plugins for the smp and the owner is very good at making custom items for the smp and the owner is very good at making custom ranks for the smp",
+    image: "/boyavatar.png",
     name: "Sparker",
     title: "Former Member of KanrarMC",
   },

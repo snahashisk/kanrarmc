@@ -32,7 +32,7 @@ const Voting = () => {
       id="voting"
     >
       <div className="mx-auto px-4 sm:px-6 lg:px-8 text-center col-span-2 flex flex-col gap-5 items-center justify-center +">
-        <h1 className="mb-4 text-lg font-bold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+        <h1 className="mb-4 text-4xl font-bold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
           Support KanrarMC by <span className="text-purple">Voting</span>
         </h1>
         <p className="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">

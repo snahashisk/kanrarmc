@@ -61,7 +61,7 @@ export const Playerstats = () => {
   };
 
   return (
-    <section className="py-20 w-full text-center" id="playerstats">
+    <section className="py-10 w-full text-center" id="playerstats">
       <h1 className="heading py-4">
         KanrarSMP <span className="text-purple">Player Statistics</span>
       </h1>
@@ -135,7 +135,7 @@ export const Playerstats = () => {
                   <td className="px-6 py-4 font-bold text-gray-900 dark:text-white">
                     {index + 1}
                   </td>
-                  <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white flex items-center gap-3">
+                  <td className="px-3 lg:px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white flex items-center gap-3">
                     <img
                       src={`https://crafatar.com/avatars/${player.uuid}`}
                       alt={player.name}
@@ -143,7 +143,7 @@ export const Playerstats = () => {
                     />
                     {player.name}
                   </td>
-                  <td className="px-6 py-4 text-purple-400 font-semibold">
+                  <td className="px-4 py-4 text-purple-400 font-semibold">
                     {formatPlaytime(player.total_playtime)}
                   </td>
                 </tr>
