@@ -25,28 +25,14 @@ type WidgetData = {
 };
 
 const Hero = () => {
-  const [serverStatus, setServerStatus] = useState<ServerStatus>({
-    online: false,
-    players: {
-      online: 10,
-      max: 100,
-      list: [],
-    },
-  });
-
-  const [data, setData] = useState<WidgetData>({
-    presence_count: 30,
-    members: [],
-    id: "",
-    name: "",
-    instant_invite: "",
-  });
+  const [serverStatus, setServerStatus] = useState<ServerStatus | null>(null);
+  const [data, setData] = useState<WidgetData | null>(null);
 
   useEffect(() => {
     const getStatus = async () => {
       try {
         const res = await fetch(
-          "https://api.mcsrvstat.us/3/play.kanrarsmp.fun"
+          "https://api.mcstatus.io/v2/status/java/play.kanrarsmp.fun"
         );
         const data = await res.json();
         setServerStatus(data);
@@ -75,7 +61,6 @@ const Hero = () => {
 
   return (
     <div className="pb-20 pt-36">
-      {/* Spotlight Effects */}
       <div>
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
@@ -87,46 +72,57 @@ const Hero = () => {
         />
         <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="blue" />
       </div>
-
-      {/* Grid Background */}
       <div className="h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2] absolute top-0 left-0 flex items-center justify-center">
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
       </div>
-
-      {/* Hero Content */}
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
             Best minecraft survival server
           </p>
-
           <TextGenerateEffect
             words="Welcome to KanrarMC the Real Survival Experience"
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
-
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl text-gray-300">
             Hi! I&apos;m Snahashis, a Minecraft Server Developer based in India.
           </p>
           <p className="text-center mt-5 md:tracking-wider text-sm md:text-lg lg:text-lg font-semibold">
             IP: play.kanrarsmp.fun PORT: 4150
           </p>
-
           <div className="flex flex-col md:flex-row items-center mt-8 justify-center space-y-4 md:space-y-0 md:space-x-28">
             <a href="#about">
-              <MagicButton
-                title={`${playerCount} Players Online`}
-                icon={<FaPlay />}
-                position="left"
-              />
+              {playerCount !== null && playerCount !== undefined ? (
+                <MagicButton
+                  title={`${playerCount} Players Online`}
+                  icon={<FaPlay />}
+                  position="left"
+                />
+              ) : (
+                <MagicButton
+                  title="Loading..."
+                  otherClasses="animate-pulse"
+                  icon={<FaPlay />}
+                  position="left"
+                />
+              )}
             </a>
-
             <a href="https://discord.gg/rZcXmqyVnr" target="_blank">
-              <MagicButton
-                title={`${data?.presence_count} Users Online`}
-                icon={<FaDiscord />}
-                position="left"
-              />
+              {data?.presence_count !== null &&
+              data?.presence_count !== undefined ? (
+                <MagicButton
+                  title={`${data.presence_count} Users Online`}
+                  icon={<FaDiscord />}
+                  position="left"
+                />
+              ) : (
+                <MagicButton
+                  title="Loading..."
+                  otherClasses="animate-pulse"
+                  icon={<FaDiscord />}
+                  position="left"
+                />
+              )}
             </a>
           </div>
         </div>
